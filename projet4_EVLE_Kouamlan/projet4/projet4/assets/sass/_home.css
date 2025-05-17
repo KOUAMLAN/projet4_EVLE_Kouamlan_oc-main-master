@@ -1,0 +1,22 @@
+.hero, .functioning, 
+.restaurants { margin-bottom: 3rem; 
+@media (min-width: 1024px) { margin-bottom: 80px; } }
+// pages/home.scss
+
+.restaurant-card {
+    width: 100%;
+
+    @include responsive(tablet) {
+        width: calc(50% - 1rem);
+    }
+}
+
+.menu__header {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center; /* Vertically center items */
+}
+
+.menu__title {
+    flex-grow: 1; /* Allow title to take up remaining space */
+}

@@ -1,0 +1,3 @@
+@mixin button-gradient {
+  background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+}

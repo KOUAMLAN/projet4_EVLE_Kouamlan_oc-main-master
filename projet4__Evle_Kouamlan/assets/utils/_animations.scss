@@ -1,0 +1,20 @@
+// utils/_animations.scss
+
+// Keyframes for animations
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+// Apply animation to menu items
+.menu-item {
+  animation: slideInRight 0.5s ease forwards;
+  animation-delay: calc(var(--item-number) * 0.1s);
+}

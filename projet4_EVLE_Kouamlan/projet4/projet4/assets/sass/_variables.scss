@@ -1,0 +1,58 @@
+// utils/_variables.scss
+
+// Colors
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$white: #FFFFFF;
+$background-light: #F7F7F7;
+$background-dark: #EAEAEA;
+$dark-grey: #353535;
+$text-color-dark: #000000;
+
+// Breakpoints
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+// Typography
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Shrikhand', cursive;
+
+
+// Spacing
+$gap-small: 15px;
+$gap-medium: 20px;
+$gap-large: 40px;
+
+// Header sizes
+$header-mobile-width: 375px;
+$header-mobile-height: 63px;
+$header-desktop-width: 195.57px;
+$header-desktop-height: 33.44px;
+
+// Footer sizes
+$footer-desktop-width: 1440px;
+$footer-desktop-height: 360px;
+
+// Menu card
+$menu-card-width: 340px;
+$menu-card-height: 251px;
+
+// Badge new
+$badge-new-width: 80px;
+$badge-new-height: 29px;
+
+// Shadows
+$shadow-md: 0 4px 15px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 4px 15px rgba(0, 0, 0, 0.15);
+
+// CSS Custom Properties (for compatibility)
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --white: #{$white};
+  --background-light: #{$background-light};
+  --dark-grey: #{$dark-grey};
+}
+

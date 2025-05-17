@@ -1,0 +1,36 @@
+// utils/_mixins.scss
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@mixin card-style {
+  background-color: $white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: $shadow-md;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (min-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == desktop {
+    @media (min-width: $breakpoint-desktop) {
+      @content;
+    }
+  }
+}

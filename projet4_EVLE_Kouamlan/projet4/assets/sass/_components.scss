@@ -1,0 +1,145 @@
+// components/_components.scss
+.hero, .functioning,
+.restaurants {
+  margin-bottom: 3rem;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 80px;
+  }
+}
+
+.btn {
+  background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+  color: $white;
+  border: none;
+  border-radius: 25px;
+  padding: 13px 18px;
+  font-weight: 500;
+  box-shadow: $shadow-md;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+    box-shadow: $shadow-lg;
+  }
+}
+
+.btn-like {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  position: relative;
+
+  .fas {
+    background: linear-gradient($primary-color, $secondary-color);
+}
+
+.text-gradient {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Dégradé de couleurs */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Rendre le texte transparent */
+}
+    color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover .fas {
+    opacity: 1;
+  }
+
+.card {
+  background-color: $white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+  &__image {
+    width: 100%;
+    height: 174px;
+    object-fit: cover;
+  }
+
+  &__content {
+    padding: $spacing-medium;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+  }
+}
+
+.heart-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+_layout.scss
+
+text
+.header {
+  @include flex-center;
+  height: 63px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+  &__logo {
+    width: 162px;
+  }
+}
+
+.footer {
+  background-color: $dark-grey;
+  color: $white;
+  padding: $spacing-large $spacing-medium;
+
+  &__logo {
+    font-family: 'Shrikhand', cursive;
+    font-size: $font-size-large;
+    margin-bottom: $spacing-medium;
+  }
+
+  &__nav {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      margin-bottom: $spacing-small;
+    }
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+@include responsive(tablet) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      margin-bottom: 0;
+    }
+
+    &__nav {
+      display: flex;
+      
+      li {
+        margin-right: $spacing-medium;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+  
